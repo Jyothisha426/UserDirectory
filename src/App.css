@@ -1,0 +1,24 @@
+/* Global styles */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background-color: #eaf7ff; /* Light mode background */
+  color: #333; /* Light mode text */
+}
+
+body.dark {
+  background-color: #333; /* Dark mode background */
+  color: #eaf7ff; /* Dark mode text */
+}
+
+/* Additional custom styles for theme */
+.light .navbar {
+  background-color: #f8f9fa; /* Light navbar */
+}
+
+.dark .navbar {
+  background-color: #333; /* Dark navbar */
+  color: #eaf7ff;
+}

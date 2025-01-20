@@ -1,0 +1,210 @@
+/* User Details Container */
+.user-details-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9; /* Light background for light mode */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode user details container */
+body.dark .user-details-container {
+  background: #444; /* Dark background for dark mode */
+  color: #eaf7ff; /* Light text for dark mode */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow in dark mode */
+}
+
+/* User Details Title */
+.user-details-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Dark mode user details title */
+body.dark .user-details-title {
+  color: #eaf7ff; /* Light text in dark mode */
+}
+
+/* User Details Content */
+.user-details-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background: #fff; /* Light background for profile section */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode profile section */
+body.dark .profile-section {
+  background: #333; /* Dark background for profile section */
+  color: #eaf7ff; /* Light text for dark mode */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Enhanced shadow in dark mode */
+}
+
+/* Profile Icon */
+.profile-icon {
+  font-size: 80px;
+  color: #004a4f; /* Medium blue icon color */
+  margin-bottom: 15px;
+}
+
+/* Dark mode profile icon */
+body.dark .profile-icon {
+  color: #5aa4d6; /* Light blue icon color in dark mode */
+}
+
+/* Profile Info */
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+body.dark .profile-info h2 {
+  color: #eaf7ff; /* Light text color in dark mode */
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #555;
+}
+
+body.dark .profile-info p {
+  color: #ccc; /* Lighter text in dark mode */
+}
+
+/* Details Section */
+.details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* User Section */
+.user-section {
+  background: #fff; /* Light background for user section */
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode user section */
+body.dark .user-section {
+  background: #444; /* Dark background for user section */
+  color: #eaf7ff; /* Light text for dark mode */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Enhanced shadow in dark mode */
+}
+
+/* User Section Headings */
+.user-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+body.dark .user-section h2 {
+  color: #eaf7ff; /* Light text for headings in dark mode */
+}
+
+/* User Section Paragraph */
+.user-section p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+body.dark .user-section p {
+  color: #ccc; /* Lighter gray text for dark mode */
+}
+
+/* User Section Links */
+.user-section a {
+  color: #004a4f; /* Medium blue link color */
+  text-decoration: none;
+}
+
+.user-section a:hover {
+  text-decoration: underline;
+  color: #3b88c3; /* Darker blue on hover */
+}
+
+/* Dark mode user section links */
+body.dark .user-section a {
+  color: #eaf7ff; /* Light link color in dark mode */
+}
+
+body.dark .user-section a:hover {
+  color: #9ad3f4; /* Light hover color for links */
+}
+
+/* Go Back Button */
+.go-back-button {
+  margin-top: 20px;
+  display: block;
+  width: 180px;
+  padding: 10px;
+  font-size: 16px;
+  background: #004a4f; /* Medium blue background */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.go-back-button:hover {
+  background: #00666a; /* Darker blue on hover */
+}
+
+/* Dark mode go back button */
+body.dark .go-back-button {
+  background: #5aa4d6; /* Light blue background in dark mode */
+}
+
+body.dark .go-back-button:hover {
+  background: #7bb9c8; /* Light blue hover color in dark mode */
+}
+
+/* Responsive Styles for Small Devices */
+@media (max-width: 768px) {
+  /* Stack the sections vertically for small screens */
+  .user-details-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-section {
+    flex: none;
+    width: 100%;
+  }
+
+  .user-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .go-back-button {
+    width: 100%;
+  }
+}

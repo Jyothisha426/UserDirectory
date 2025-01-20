@@ -1,0 +1,225 @@
+/* Global styles for dark mode and light mode */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background-color: #eaf7ff; /* Light blue background */
+  color: #333; /* Dark text color for light mode */
+}
+
+body.dark {
+  background-color: #333; /* Dark mode background */
+  color: #eaf7ff; /* Light text for dark mode */
+}
+
+/* Loader styles */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #eaf7ff; /* Light blue background for light mode */
+}
+
+.loader {
+  border: 5px solid #cce7f5; /* Lighter blue background */
+  border-top: 5px solid #5aa4d6; /* Medium blue loader */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+/* Dark mode loader adjustments */
+body.dark .loader-container {
+  background-color: #333; /* Dark background for loader in dark mode */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Home container styles */
+.home-container {
+  padding: 20px;
+  background-color: #eaf7ff; /* Light blue background for light mode */
+  color: #333; /* Dark text for light mode */
+}
+
+/* Dark mode home container */
+body.dark .home-container {
+  background-color: #333; /* Dark background for dark mode */
+  color: #eaf7ff; /* Light text for dark mode */
+}
+
+/* Search and Sort */
+.search-sort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-sort input,
+.search-sort select {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0faff; /* Light blue background */
+  border: 1px solid #5aa4d6; /* Medium blue border */
+}
+
+body.dark .search-sort input,
+body.dark .search-sort select {
+  background-color: #444; /* Darker background in dark mode */
+  border: 1px solid #5aa4d6; /* Medium blue border */
+  color: #eaf7ff; /* Light text in dark mode */
+}
+
+/* User List Grid */
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* User Card */
+.user-card {
+  background: #ffffff; /* White card background */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid #cce7f5;
+  text-align: center;
+  max-width: 400px;
+}
+
+/* Dark mode user card */
+body.dark .user-card {
+  background: #444; /* Dark card background */
+  border: 2px solid #5aa4d6; /* Lighter border for dark mode */
+  color: #eaf7ff; /* Light text color for dark mode */
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Image details container */
+.image-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* User image circle */
+.user-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf7ff; /* Light blue background */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+/* Dark mode user image */
+body.dark .user-image {
+  background: #444; /* Dark background for image circle in dark mode */
+}
+
+/* Main user details */
+.user-main-details{
+  text-align: left;
+}
+
+.user-main-details h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #5aa4d6; /* Medium blue text color */
+}
+
+body.dark .user-main-details h3 {
+  color: #eaf7ff; /* Light text color in dark mode */
+}
+
+.user-main-details p {
+  font-size: 14px;
+  color: #666; /* Neutral gray color */
+}
+
+body.dark .user-main-details p {
+  color: #ccc; /* Lighter gray text for dark mode */
+}
+
+/* User card link */
+.user-card-link {
+  display: block;
+  margin-top: 10px;
+  color: #5aa4d6; /* Medium blue text color */
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #eaf7ff;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.user-card-link:hover {
+  text-decoration: underline;
+  color: #3b88c3; /* Darker blue on hover */
+}
+
+/* Dark mode user card link */
+body.dark .user-card-link {
+  color: #eaf7ff; /* Light link color in dark mode */
+  background-color: transparent;
+}
+
+body.dark .user-card-link:hover {
+  color: #9ad3f4; /* Light hover color for links */
+}
+
+/* Dark mode profile icon */
+body.dark .profile-icon {
+  color: #5aa4d6; /* Light blue icon color in dark mode */
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #5aa4d6; /* Light blue button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #ccc; /* Disabled button */
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #3b88c3; /* Darker blue on hover */
+}
+
+.pagination span {
+  font-size: 16px;
+  color: #333;
+}

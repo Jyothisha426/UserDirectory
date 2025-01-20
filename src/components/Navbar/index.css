@@ -1,0 +1,53 @@
+.navbar {
+  padding: 10px 20px;
+  background: #5aa4d6; /* Default light mode background */
+  color: #ffffff; /* Default light mode text */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f0faff;
+}
+
+.navbar.dark {
+  background: #333; /* Dark mode background */
+  color: #eaf7ff; /* Light text for dark mode */
+}
+
+.theme-toggle {
+  padding: 5px 10px;
+  background: #f0faff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #eaf7ff;
+  color: #004a4f;
+}
+
+.navbar-heading{
+  font-size: 25px;
+}
+
+.navbar.dark .navbar-heading{
+  color: #5aa4d6;
+}
+
+@media (max-width: 768px){
+  .navbar-heading{
+    font-size: 13px;
+  }
+
+  .theme-toggle{
+    font-size: 9px;
+  }
+
+}
